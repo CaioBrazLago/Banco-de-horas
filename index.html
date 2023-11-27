@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/fonts/fonts.css" />
+    <title>BQpontos</title>
+  </head>
+  <body>
+    <header>
+        <h1><span id="titulo">BQ</span>p o n t<img src="./src/images/tempo-rapido.png" alt="imagem relógio"> s</h1> <div role="button" id="button-menu"><img src="./src/images/menu.png" alt="menu"></div>
+
+    </header>
+    <main>
+        <aside id="list">
+            <ul>
+               <a href=""><img src="./src/images/botao-de-inicio.png" alt="relatórios" width="25px"> <li>Home</li></a>
+               <a href=""><img src="./src/images/relatorio.png" alt="relatórios" width="25px"> <li> Relatórios</li></a>
+               <a href=""><img src="./src/images/atestado.png" alt="relatórios" width="25px"><li> Atestados</li></a>
+               <a href=""><li><img src="./src/images/sobre nos.png" alt="relatórios" width="25px">  Sobre nós</li></a>
+               <a href="https://api.whatsapp.com/send?phone=558196310408&text=%F0%9F%95%92%20Ol%C3%A1!%20Bem-vindo%20ao%20nosso%20atendimento%20automatizado.%0A%0A%F0%9F%95%98%20Hor%C3%A1rio%20de%20atendimento:%0ASeg-Sex:%209h%20%C3%A0s%2018h%0AS%C3%A1b:%209h%20%C3%A0s%2012h%0A%0ADeixe%20sua%20mensagem,%20e%20responderemos%20assim%20que%20poss%C3%ADvel.%20Fora%20do%20hor%C3%A1rio%20de%20atendimento,%20retornaremos%20em%20breve.%0A%0AObrigado%20por%20escolher%20nossos%20servi%C3%A7os!%20%F0%9F%91%8D" target="_blank"><li><img src="./src/images/suporte.png" alt="relatórios" width="30px">  Suporte</li></a>
+               
+            </ul>
+        </aside>
+        <form method="dialog">
+            <span>Data:</span> <input type="date" id="data" />
+        
+
+            <label for="horasExtrasEntrada">Hora Entrada</label>
+            <input type="time" id="horarioEntrada" />
+
+            <label for="horasExtrasaida">Hora Saida</label>
+            <input type="time" id="horarioSaida" />
+
+            <button onclick="lancarHoras()">Registrar Horário</button>
+            <label for="horasTrabalhadasDIA">horas Trabalhadas no dia</label>
+            <input type="text" id="horasTrabalhadas" placeholder="hh:mm" />
+
+            <label for="horasExtrasDIA">Horas Extras dia</label>
+            <input type="text" id="horasExtras" placeholder="hh:mm" />
+            <label for="total-horas">Total Acumulado:</label>
+            <input type="text" id="total-horas">
+        </form>
+    </main>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
